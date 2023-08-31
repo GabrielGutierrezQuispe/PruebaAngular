@@ -11,12 +11,14 @@ export class CounterComponent {
 
   increase() {
     // this.counter = this.counter + 1;
-    this.counter++;
+    this.counter += 1;
   }
 
   decrease() {
     // this.counter = this.counter - 1;
+    if (this.counter > 0){
     this.counter--;
+    }
   }
 
   inactiveDecrease() {
